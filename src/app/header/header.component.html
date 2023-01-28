@@ -1,0 +1,21 @@
+<mat-toolbar class="header">
+  <a routerLink="/">
+    <span>
+      RecipeSharer
+    </span>
+  </a>
+  <span class="spacer"></span>
+  <li *ngIf="isAuthenticated">
+    <a mat-button routerLink="/create" [routerLinkActive]="'active'">New Post</a>
+  </li>
+  <li *ngIf="!isAuthenticated">
+    <a mat-button routerLink="/login" [routerLinkActive]="'active'">Login</a>
+  </li>
+  <li *ngIf="!isAuthenticated">
+    <a mat-button routerLink="/signup" [routerLinkActive]="'active'">Sign Up</a>
+  </li>
+  <li *ngIf="isAuthenticated">
+    <button mat-button (click)="onLogOut()" class="logout">Logout</button>
+  </li>
+
+</mat-toolbar>

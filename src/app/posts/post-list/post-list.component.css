@@ -1,0 +1,34 @@
+/* :host {
+  display: block;
+  margin-top: 1rem;
+} */
+
+mat-spinner {
+  margin: auto;
+}
+
+.info-text {
+  text-align: center;
+}
+
+.post-image {
+  max-width: fit-content;
+}
+
+.post-image img {
+  width: auto;
+  height: 500px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card{
+  margin-top: 10px;
+  max-width: fit-content;
+  margin: auto;
+}
+
+mat-card{
+  margin-top: 15px;
+}
+
+
